@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/placeholder_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
+    android:textAppearance="?attr/textAppearanceHeadlineSmall"
+    android:background="@color/rot_background"
+    android:textColor="@color/rot_text_primary" />

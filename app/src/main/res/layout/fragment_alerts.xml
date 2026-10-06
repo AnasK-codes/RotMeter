@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:padding="24dp" android:background="@color/rot_background">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tab_alerts" android:textAppearance="@style/TextAppearance.RotMeter.Headline" android:textStyle="bold" />
+    <ProgressBar android:id="@+id/loading" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:indeterminate="true" android:visibility="gone" />
+    <TextView android:id="@+id/error_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:accessibilityLiveRegion="polite" android:text="@string/alerts_load_error" android:textAppearance="?attr/textAppearanceBodyMedium" android:textColor="?attr/colorError" android:visibility="gone" />
+    <com.google.android.material.card.MaterialCardView style="@style/Widget.RotMeter.Card" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="20dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:padding="12dp">
+            <androidx.recyclerview.widget.RecyclerView android:layoutAnimation="@anim/list_entry" android:id="@+id/alerts_list" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" />
+            <LinearLayout android:id="@+id/empty_roasts_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center" android:orientation="vertical" android:padding="16dp" android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_roasts_emoji" android:textSize="56sp" android:importantForAccessibility="no" />
+                <TextView android:id="@+id/empty_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="8dp" android:text="@string/alerts_empty_state" android:textAppearance="@style/TextAppearance.RotMeter.Secondary" android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

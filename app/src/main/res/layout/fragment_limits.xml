@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/rot_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:background="@color/rot_background">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tab_limits" android:textAppearance="@style/TextAppearance.RotMeter.Headline" android:textStyle="bold" />
+        <com.google.android.material.card.MaterialCardView style="@style/Widget.RotMeter.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/limits_description" android:textAppearance="@style/TextAppearance.RotMeter.Secondary" />
+                <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/soft_blocking_enabled" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="8dp" android:text="@string/soft_blocking_title" android:textColor="@color/rot_text_primary" android:textStyle="bold" />
+                <TextView android:id="@+id/blocking_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.RotMeter.Secondary" android:text="@string/blocking_disabled" />
+                <com.google.android.material.button.MaterialButton style="@style/Widget.RotMeter.Button.Pill.Outlined" android:id="@+id/blocking_setup" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="8dp" android:text="@string/blocking_setup" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <ProgressBar android:id="@+id/loading" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:indeterminate="true" android:visibility="gone" />
+        <TextView android:id="@+id/error_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:accessibilityLiveRegion="polite" android:text="@string/limits_error" android:textAppearance="?attr/textAppearanceBodyMedium" android:textColor="?attr/colorError" android:visibility="gone" />
+        <androidx.recyclerview.widget.RecyclerView android:layoutAnimation="@anim/list_entry" android:id="@+id/apps_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:clipToPadding="false" android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

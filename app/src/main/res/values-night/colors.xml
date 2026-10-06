@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rot_background">@color/rot_dark_background</color>
+    <color name="rot_surface">@color/rot_dark_surface</color>
+    <color name="rot_surface_variant">@color/rot_dark_surface_variant</color>
+    <color name="rot_stroke">@color/rot_dark_stroke</color>
+    <color name="rot_text_primary">@color/rot_dark_text</color>
+    <color name="rot_text_secondary">@color/rot_dark_text_secondary</color>
+    <color name="rot_accent_text">@color/rot_neon_purple</color>
+    <color name="rot_cyan_text">@color/rot_electric_cyan</color>
+    <color name="rot_error_text">@color/rot_hot_error</color>
+    <color name="rot_fresh">@color/rot_lime</color>
+    <color name="rot_mild">@color/rot_warning</color>
+    <color name="rot_skibidi">@color/rot_orange_red</color>
+    <color name="rot_terminal">@color/rot_hot_error</color>
+    <color name="quest_success_surface">#17251C</color>
+    <color name="quest_success_stroke">@color/rot_lime</color>
+    <color name="rot_accent_surface">#201B38</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:background="@color/rot_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tab_stats" android:textAppearance="@style/TextAppearance.RotMeter.Headline" android:textStyle="bold" />
+        <com.google.android.material.card.MaterialCardView style="@style/Widget.RotMeter.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/weekly_rot_scores" android:textAppearance="@style/TextAppearance.RotMeter.Label" />
+                <com.rotmeter.app.views.BarChartView android:id="@+id/week_chart" android:layout_width="match_parent" android:layout_height="220dp" android:layout_marginTop="8dp" android:padding="8dp" android:contentDescription="@string/weekly_rot_scores" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <ProgressBar android:id="@+id/loading" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:indeterminate="true" android:visibility="gone" />
+        <TextView android:id="@+id/error_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:accessibilityLiveRegion="polite" android:text="@string/stats_load_error" android:textAppearance="?attr/textAppearanceBodyMedium" android:textColor="?attr/colorError" android:visibility="gone" />
+        <com.google.android.material.card.MaterialCardView style="@style/Widget.RotMeter.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardBackgroundColor="@color/rot_accent_surface" app:strokeColor="@color/rot_neon_purple">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/worst_app_this_week" android:textAppearance="@style/TextAppearance.RotMeter.Label" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:id="@+id/worst_app_initial" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginEnd="12dp" android:background="@drawable/bg_app_initial" android:gravity="center" android:textSize="22sp" android:textStyle="bold" android:importantForAccessibility="no" />
+                    <TextView android:id="@+id/worst_app" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/no_week_usage" android:textAppearance="@style/TextAppearance.RotMeter.Secondary" android:textStyle="bold" android:textSize="18sp" android:layout_weight="1" android:textColor="@color/rot_text_primary" />
+                </LinearLayout>
+                <TextView android:id="@+id/beat_average" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:textAppearance="@style/TextAppearance.RotMeter.Body" android:textColor="@color/rot_cyan_text" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/weekly_app_totals" android:textAppearance="@style/TextAppearance.RotMeter.Label" />
+        <androidx.recyclerview.widget.RecyclerView android:layoutAnimation="@anim/list_entry" android:id="@+id/app_totals" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:nestedScrollingEnabled="false" />
+        <TextView android:id="@+id/empty_totals" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/no_week_usage" android:textAppearance="@style/TextAppearance.RotMeter.Secondary" android:visibility="gone" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/Widget.RotMeter.Card.Item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:clickable="true" android:focusable="true" android:foreground="?attr/selectableItemBackground">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/app_initial" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginEnd="12dp" android:background="@drawable/bg_app_initial" android:gravity="center" android:textSize="20sp" android:textStyle="bold" android:importantForAccessibility="no" />
+            <TextView android:id="@+id/app_label" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAppearance="@style/TextAppearance.RotMeter.Body" android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal" android:gravity="center_vertical">
+            <TextView android:id="@+id/app_category" style="@style/Widget.RotMeter.InfoPill" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="8dp" />
+            <TextView android:id="@+id/app_limit" style="@style/Widget.RotMeter.InfoPill" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textColor="@color/rot_cyan_text" android:textStyle="bold" />
+        </LinearLayout>
+        <TextView android:id="@+id/today_usage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textAppearance="@style/TextAppearance.RotMeter.Secondary" android:textSize="12sp" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/usage_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:max="100" app:trackThickness="5dp" app:trackCornerRadius="3dp" app:trackColor="@color/rot_surface_variant" app:indicatorColor="@color/rot_fresh" />
+        <com.google.android.material.materialswitch.MaterialSwitch android:id="@+id/block_app" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp" android:layout_marginTop="8dp" android:text="@string/block_selected_app" android:textSize="12sp" android:textColor="@color/rot_text_primary" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

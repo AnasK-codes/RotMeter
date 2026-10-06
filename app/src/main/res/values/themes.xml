@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.RotMeter" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:colorBackground">@color/rot_background</item>
+        <item name="android:windowBackground">@color/rot_background</item>
+        <item name="colorOnBackground">@color/rot_text_primary</item>
+        <item name="colorSurface">@color/rot_surface</item>
+        <item name="colorSurfaceVariant">@color/rot_surface_variant</item>
+        <item name="colorSurfaceContainer">@color/rot_surface</item>
+        <item name="colorSurfaceContainerLowest">@color/rot_background</item>
+        <item name="colorSurfaceContainerLow">@color/rot_surface</item>
+        <item name="colorSurfaceContainerHigh">@color/rot_surface</item>
+        <item name="colorSurfaceContainerHighest">@color/rot_surface_variant</item>
+        <item name="colorSurfaceDim">@color/rot_background</item>
+        <item name="colorSurfaceBright">@color/rot_surface_variant</item>
+        <item name="colorOnSurface">@color/rot_text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/rot_text_secondary</item>
+        <item name="colorOutline">@color/rot_stroke</item>
+        <item name="colorOutlineVariant">@color/rot_stroke</item>
+        <item name="colorPrimary">@color/rot_neon_purple</item>
+        <item name="colorOnPrimary">@color/rot_dark_background</item>
+        <item name="colorPrimaryContainer">@color/rot_surface_variant</item>
+        <item name="colorOnPrimaryContainer">@color/rot_accent_text</item>
+        <item name="colorSecondary">@color/rot_electric_cyan</item>
+        <item name="colorOnSecondary">@color/rot_dark_background</item>
+        <item name="colorSecondaryContainer">@color/rot_surface_variant</item>
+        <item name="colorOnSecondaryContainer">@color/rot_cyan_text</item>
+        <item name="colorTertiary">@color/rot_lime</item>
+        <item name="colorOnTertiary">@color/rot_dark_background</item>
+        <item name="colorTertiaryContainer">@color/rot_surface_variant</item>
+        <item name="colorOnTertiaryContainer">@color/rot_fresh</item>
+        <item name="colorError">@color/rot_error_text</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="android:textColorPrimary">@color/rot_text_primary</item>
+        <item name="android:textColorSecondary">@color/rot_text_secondary</item>
+        <item name="android:statusBarColor">@color/rot_background</item>
+        <item name="android:navigationBarColor">@color/rot_background</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="materialCardViewStyle">@style/Widget.RotMeter.Card</item>
+        <item name="materialButtonStyle">@style/Widget.RotMeter.Button.Pill</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.RotMeter.Button.Pill.Outlined</item>
+        <item name="bottomNavigationStyle">@style/Widget.RotMeter.BottomNavigation</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Theme.RotMeter" parent="Base.Theme.RotMeter" />
+</resources>
